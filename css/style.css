@@ -55,6 +55,10 @@
 header nav{
   background-color: #ff7f50;
 }
+
+a{
+  font-family: 'Montserrat' ;
+}
 .logo{
       width: 35%;
       height: 10%;
@@ -64,11 +68,13 @@ h2{
   content: " ";
   width: 40%;
   height: 5px;
-  justify-content: center;
   background-color: red;
+  display: block;
+  margin: 0 auto;
 }
  
  .dashboard{
+  margin-top: 5rem;
    /*background-image: url(img/web.png);*/
  } 
  .caption{
@@ -81,7 +87,7 @@ h2{
 }
 
 .team-pix{
-  max-width: 50%;
+  width: 50%;
   border-radius: 50%;
   line-height: 0.5rem;
 }
@@ -92,3 +98,14 @@ hr{
   justify-content: center;
   background-color: grey;
 }
+
+/**media query**/
+@media (min-width: 768px) {
+  *{
+    font-size: 1rem;
+  }
+  .dashboard{
+    margin-top: 12rem;
+    font-size: 7rem;
+  }
+} 
